@@ -17,7 +17,7 @@ public class Boards : MonoBehaviour
     private void SetUp(){
         for ( int i = 0;i<width; i ++){
             for (int j = 0; j<height; j++){
-                Vector2 tempPosition = new Vector2(i+1,j+1);
+                Vector2 tempPosition = new Vector2(i,j);
                 Instantiate(tilePrefab, tempPosition,Quaternion.identity);
             }
         }
